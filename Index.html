@@ -6,41 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lyrics Adda</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="main_container">
-      <div class="main_sub_container">
-        <header class="heading">
-          <h1>Lyrics Adda</h1>
-          <span>Where magical words live together</span>
-        </header>
-        <div class="searchBar">
-          <div class="searcbar_outer">
-            <div class="searchbar_inner">
-              <span>|</span>
-              <form action="" id="form">
+      <header class="heading">
+        <h1>Lyrics Adda</h1>
+        <span>Where magical words live together</span>
+      </header>
+      <!-- -----search bar------- -->
+
+      <main class="hero_section">
+        <section class="song-list-section" id="result"></section>
+        <form action="" id="form">
+          <div class="wrap">
+            <div class="search">
               <input
-                class="search_area"
                 type="text"
-                placeholder="Put Your favourite Song Name here..."
+                class="searchTerm"
+                placeholder="Enter Song or Artist name in the search area"
               />
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"></i>
+              </button>
             </div>
-            <button>
-              <img
-                class="Search_icon"
-                src="./images/search-svgrepo-com.svg"
-                alt="searc_icon"
-              />
-            </button>
-          </form>
           </div>
+        </form>
+        <!-- 3d desingn start-->
+        <div id="container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div>
+            <!--5-->
+          </div>
+          <div></div>
+          <div></div>
         </div>
-        <section>
-          <div class="container" id="result">
-            <p>Enter Song or Artist name in the search area</p>
-          </div>
-        </section>
-      </div>
+        <!-- 3d desingn end -->
+        <div class="hero_image">
+          <img src="images/hero_image.png" alt="image" />
+        </div>
+      </main>
     </div>
 
     <script src="script.js"></script>
