@@ -64,10 +64,7 @@ async function getLyrics(artist, songTitle) {
      "`;
 }
 
-/*
-design
-
-*/
+/*-----------------design------------------------------*/
 let backgrounds = [
   `https://images.urbanoutfitters.com/is/image/UrbanOutfitters/40405854_105_s`,
   `https://s-media-cache-ak0.pinimg.com/736x/34/dc/e7/34dce70e25e5c3798b548105388b2344.jpg`,
