@@ -230,4 +230,38 @@ section {
   transform: rotateZ(-180deg) rotateX(90deg) translateZ(128px);
   transform-origin: 50%;
 }
-/* design */
+/* design end*/
+
+/* media query */
+@media screen and (max-width: 674px) {
+  #container {
+    display: none;
+  }
+  .hero_image {
+    filter: blur(3px);
+    z-index: -5;
+  }
+  .wrap {
+    width: 60%;
+  }
+  .song-list-section {
+    width: 90%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hero_image {
+    z-index: -5;
+  }
+  .wrap {
+    width: 60%;
+    left: 40%;
+  }
+  .song-list-section {
+    width: 60%;
+    left: 10%;
+  }
+  #container {
+    display: none;
+  }
+}

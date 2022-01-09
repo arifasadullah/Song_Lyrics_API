@@ -57,6 +57,11 @@ result.addEventListener("click", (event) => {
 async function getLyrics(artist, songTitle) {
   const response = await fetch(`${apiurl}/v1/${artist}/${songTitle}`);
   const data = await response.json();
+  if (data.error == undefined) {
+    console.log(data.error);
+  } else {
+    alert(data.error);
+  }
 
   const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, "<br>");
   result.innerHTML = `<h2><strong>${artist}</strong> - ${songTitle}</h2>
